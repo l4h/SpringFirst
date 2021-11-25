@@ -6,7 +6,7 @@ import java.io.IOException;
 public class SpringFirst implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-        
+        System.out.println("init proc");
     }
 
     @Override
@@ -16,7 +16,7 @@ public class SpringFirst implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-
+        System.out.println("Servlet service");
     }
 
     @Override
@@ -26,6 +26,6 @@ public class SpringFirst implements Servlet {
 
     @Override
     public void destroy() {
-
+        System.out.println("destroying");
     }
 }
